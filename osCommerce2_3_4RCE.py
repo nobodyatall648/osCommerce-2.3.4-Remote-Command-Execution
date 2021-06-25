@@ -1,11 +1,15 @@
-'''
-Web Application: osCommerce
-Version Tested: 2.3.4
-Vulnerability: Remote Command Execution when /install directory wasn't removed by the admin
-Exploit: Exploiting the install.php finish process by injecting php payload into the db_database parameter & read the system command output from configure.php
-Notes: The RCE doesn't need to be authenticated
-Exploit Developer: NobodyAtall 
-'''
+# Exploit Title: osCommerce 2.3.4 Remote Command Execution
+# Vulnerability: Remote Command Execution when /install directory wasn't removed by the admin
+# Exploit: Exploiting the install.php finish process by injecting php payload into the db_database parameter & read the system command output from configure.php
+# Notes: The RCE doesn't need to be authenticated
+# Google Dork: [Null]
+# Date: 26th June 2021
+# Exploit Author: Bryan Leong <NobodyAtall>
+# Vendor Homepage: https://www.oscommerce.com/
+# Software Link: [Null]
+# Version: osCommerce 2.3.4
+# Tested on: Windows
+# CVE : [Null]
 
 import requests
 import sys
